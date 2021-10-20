@@ -3,3 +3,11 @@ body{
     text-align: center;
     font-family: arial,sans-serif;
 }
+
+
+.footer{
+    width: 100%;
+    background-color:aqua;
+    color: black;
+    Font-size:25px;
+}
