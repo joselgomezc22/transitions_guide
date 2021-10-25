@@ -1,6 +1,6 @@
 const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-pluggin')
+const HtmlWebpackPlugin = require('html-webpack-pluggin');
 
 module.exports = {
     entry:'./src/index.js',
@@ -26,5 +26,13 @@ module.exports = {
 
 
     },
+    // SECCION DE PLUGINS
+    plugins: [
+        new HtmlWebpackPlugin({ // CONFIGURACIÓN DEL PLUGIN
+            inject: true, // INYECTA EL BUNDLE AL TEMPLATE HTML
+            template: './public/index.html', // LA RUTA AL TEMPLATE HTML
+            filename: './index.html' // NOMBRE FINAL DEL ARCHIVO
+        })
+    ]
     
 }
